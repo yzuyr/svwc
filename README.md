@@ -1,4 +1,4 @@
-# svelted
+# svwc
 
 Create Svelte client-side Web Components without any bundler.
 
@@ -26,7 +26,7 @@ Create Svelte client-side Web Components without any bundler.
       <button onclick="{increment}">Increment</button>
     </svelte-component>
     <my-component foo="bar"></my-component>
-    <script type="module" src="https://esm.sh/svelted"></script>
+    <script type="module" src="https://esm.sh/svwc"></script>
   </body>
 </html>
 ```
