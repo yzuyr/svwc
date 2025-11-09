@@ -1,0 +1,31 @@
+{
+  "name": "svelted",
+  "description": "Svelte on Web Components",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "bunup",
+    "test": "bun test/index.html",
+    "test:dist": "bun test/dist.html"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bunup": "^0.15.14"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "svelte": "^5"
+  },
+  "dependencies": {
+    "lit": "^3.3.1"
+  }
+}

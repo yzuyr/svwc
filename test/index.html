@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="importmap">
+      {
+        "imports": {
+          "clsx": "https://esm.sh/clsx"
+        }
+      }
+    </script>
+    <svelte-component name="my-component" style="display: none">
+      <script lang="ts" type="javascript/blocked">
+        import { clsx } from "clsx";
+        let { foo } = $props();
+        let counter = $state(0);
+        function increment() {
+          counter += 1;
+        }
+      </script>
+      <p class="{clsx('test')}">{counter}</p>
+      <button onclick="{increment}">Increment</button>
+      <p>{foo}</p>
+    </svelte-component>
+    <my-component foo="bar"></my-component>
+    <script src="../src/index.ts" type="module"></script>
+  </body>
+</html>
