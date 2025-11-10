@@ -44,6 +44,9 @@ ${templateContent}
     const compiled = compiler.compile(svelteSource, {
       generate: "client",
       dev: false,
+      experimental: {
+        async: true,
+      },
     });
 
     // Create component from compiled code

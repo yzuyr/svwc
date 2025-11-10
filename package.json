@@ -1,7 +1,7 @@
 {
   "name": "svwc",
   "description": "Svelte on Web Components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -15,7 +15,8 @@
   "scripts": {
     "build": "bunup",
     "test": "bun test/index.html",
-    "test:dist": "bun test/dist.html"
+    "test:dist": "bun test/dist.html",
+    "test:async": "bun test/async.html"
   },
   "devDependencies": {
     "@types/bun": "latest",
